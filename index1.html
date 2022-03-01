@@ -1,36 +1,36 @@
-<head>
-
-</head>
+<head> </head>
 
 <body>
-    <button id="btn-login" onclick="iframefiat()">Buy Crypto</button>
-    <iframe id="myIframe" src="" width="350" height="650" style="display:none"></iframe>
+  <button id="btn-login" onclick="iframefiat()">Buy Crypto</button>
+  <iframe
+    id="myIframe"
+    src=""
+    width="350"
+    height="650"
+    style="display: none"
+  ></iframe>
 
-    <br><br><br>
+  <br /><br /><br />
 
+  <script>
+    Moralis.initialize("MqFD9Zd7k0YYXrncDJQDvl4F7zavdpBsBKzMiBJC");
+    Moralis.serverURL = "https://him0lndjiyvs.usemoralis.com:2053/server";
 
-    <script>
-        Moralis.initialize("MqFD9Zd7k0YYXrncDJQDvl4F7zavdpBsBKzMiBJC");
-        Moralis.serverURL = "https://him0lndjiyvs.usemoralis.com:2053/server";
- 
-    
-    (async function(){
-        Moralis.initPlugins();
+    (async function () {
+      Moralis.initPlugins();
     })();
 
-    function buycrypto(){
-        Moralis.Plugins.fiat.buy();
+    function buycrypto() {
+      Moralis.Plugins.fiat.buy();
     }
 
-
-
-    async function iframefiat(){
-        let result = await Moralis.Plugins.fiat.buy({}, {disableTriggers: true});
-        document.getElementById('myIframe').style.display='block';
-        document.getElementById('myIframe').src=result.result.data;
-
+    async function iframefiat() {
+      let result = await Moralis.Plugins.fiat.buy(
+        {},
+        { disableTriggers: true },
+      );
+      document.getElementById("myIframe").style.display = "block";
+      document.getElementById("myIframe").src = result.result.data;
     }
-  
-</script>
-
+  </script>
 </body>
