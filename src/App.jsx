@@ -176,8 +176,7 @@ const App = ({ isServerInfo }) => {
 
 export const Logo = () => (
   <div style={{ display: "flex" }}>
-    <img src={image} size="40px"
-   />
+    <img src={image} size="40px" />
   </div>
 );
 /*<svg
