@@ -23,6 +23,7 @@ import Contract from "components/Contract/Contract";
 //import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import image from "./logo.png";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -175,7 +176,11 @@ const App = ({ isServerInfo }) => {
 
 export const Logo = () => (
   <div style={{ display: "flex" }}>
-    <svg
+    <img src={image} size="40px"
+   />
+  </div>
+);
+/*<svg
       width="60"
       height="38"
       viewBox="0 0 50 38"
@@ -196,6 +201,6 @@ export const Logo = () => (
       />
     </svg>
   </div>
-);
+;*/
 
 export default App;
