@@ -145,15 +145,15 @@ const App = ({ isServerInfo }) => {
           </a>
           , every star makes us very happy!
         </Text>
-  */}
+  
         <Text style={{ display: "block" }}>
-          🙋 You have questions? Ask them on the {""}
+          🙋 You have questions? Reach out to us {""}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://forum.moralis.io/t/ethereum-boilerplate-questions/3951/29"
           >
-            Moralis forum
+            here
           </a>
         </Text>
 
@@ -167,6 +167,7 @@ const App = ({ isServerInfo }) => {
             Moralis
           </a>
         </Text>
+        */}
       </Footer>
     </Layout>
   );
