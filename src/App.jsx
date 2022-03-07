@@ -112,7 +112,7 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/onramp">
               <Ramper />
-            </Route>
+              </Route>
             <Route path="/erc20transfers">
               <ERC20Transfers />
             </Route>
