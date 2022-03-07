@@ -35,15 +35,16 @@
 
 export default Ramper;
 
-import { RampInstantSDK } from '@ramp-network/ramp-instant-sdk';
+import { RampInstantSDK } from "@ramp-network/ramp-instant-sdk";
 /*
  *  Quick Integration
  */
 function Ramper() {
   new RampInstantSDK({
-    hostAppName: 'Ramp Demo',
-    hostLogoUrl: 'https://i.ibb.co/fFd9p97/redouble-logo-dotted-png-1000x1000.png',
-    variant: 'auto',
+    hostAppName: "Ramp Demo",
+    hostLogoUrl:
+      "https://i.ibb.co/fFd9p97/redouble-logo-dotted-png-1000x1000.png",
+    variant: "auto",
   }).show();
   // new RampInstantSDK({
   // hostAppName: 'Ramp Demo',
@@ -56,9 +57,8 @@ function Ramper() {
   // 'hosted-auto' for automatic mobile / desktop handling in new window,
   // 'mobile' to force mobile version
   // 'desktop' to force desktop version (default)
-  // variant: 'auto', 
-// })
+  // variant: 'auto',
+  // })
   // .on('*', console.log)
   // .show();
 }
-
