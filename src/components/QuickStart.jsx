@@ -1,5 +1,5 @@
 import { Card, Timeline, Typography } from "antd";
-import React, { useMemo } from "react";
+//import React, { useMemo } from "react";
 import { useMoralis } from "react-moralis";
 
 const { Text } = Typography;
@@ -22,13 +22,13 @@ const styles = {
   },
 };
 
-export default function QuickStart({ isServerInfo }) {
+export default function QuickStart() {
   const { Moralis } = useMoralis();
 
-  const isInchDex = useMemo(
-    () => (Moralis.Plugins?.oneInch ? true : false),
-    [Moralis.Plugins?.oneInch],
-  );
+  // const isInchDex = useMemo(
+  //   () => (Moralis.Plugins?.oneInch ? true : false),
+  //   [Moralis.Plugins?.oneInch],
+  // );
 
   return (
     <div style={{ display: "flex", gap: "10px" }}>
@@ -36,13 +36,13 @@ export default function QuickStart({ isServerInfo }) {
         style={styles.card}
         title={
           <>
-            📝 <Text strong>To-Do List</Text>
+            📝 <Text strong>START HERE</Text>
           </>
         }
       >
         <Timeline mode="left" style={styles.timeline}>
           <Timeline.Item dot="📄">
-            <Text delete style={styles.text}>
+            <Text style={styles.text}>
               Clone or fork{" "}
               <a
                 href="https://github.com/ethereum-boilerplate/ethereum-boilerplate#-quick-start"
@@ -55,13 +55,13 @@ export default function QuickStart({ isServerInfo }) {
           </Timeline.Item>
 
           <Timeline.Item dot="💿">
-            <Text delete style={styles.text}>
+            <Text style={styles.text}>
               Install all dependencies: <Text code>npm install</Text>
             </Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🧰">
-            <Text delete={isServerInfo} style={styles.text}>
+            <Text style={styles.text}>
               Sign up for a free account on{" "}
               <a
                 href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplate"
@@ -74,7 +74,7 @@ export default function QuickStart({ isServerInfo }) {
           </Timeline.Item>
 
           <Timeline.Item dot="💾">
-            <Text delete={isServerInfo} style={styles.text}>
+            <Text style={styles.text}>
               Create a Moralis Server (
               <a
                 href="https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server"
@@ -88,7 +88,7 @@ export default function QuickStart({ isServerInfo }) {
           </Timeline.Item>
 
           <Timeline.Item dot="🔏">
-            <Text delete={isServerInfo} style={styles.text}>
+            <Text style={styles.text}>
               Rename <Text code>.env.example</Text> to <Text code>.env</Text>{" "}
               and provide your <Text strong>appId</Text> and{" "}
               <Text strong>serverUrl</Text> from{" "}
@@ -101,23 +101,23 @@ export default function QuickStart({ isServerInfo }) {
               </a>
               :
             </Text>
-            <Text code delete={isServerInfo} style={{ display: "block" }}>
+            <Text code style={{ display: "block" }}>
               REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
             </Text>
-            <Text code delete={isServerInfo} style={{ display: "block" }}>
+            <Text code style={{ display: "block" }}>
               REACT_APP_MORALIS_SERVER_URL =
               https://xxxxxx.grandmoralis.com:2053/server
             </Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🔁">
-            <Text delete={isServerInfo} style={styles.text}>
+            <Text style={styles.text}>
               Stop the app and start it again <Text code>npm run start</Text>
             </Text>
           </Timeline.Item>
 
           <Timeline.Item dot="💿">
-            <Text delete={isInchDex} style={styles.text}>
+            <Text style={styles.text}>
               Install{" "}
               <a
                 href="https://moralis.io/plugins/1inch/?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplate"
