@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
+  Redirect
 } from "react-router-dom";
 import Account from "components/Account/Account";
 import Chains from "components/Chains";
@@ -18,7 +18,7 @@ import { Layout, Tabs } from "antd";
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
-import QuickStart from "components/QuickStart";
+// import QuickStart from "components/QuickStart";
 import Contract from "components/Contract/Contract";
 //import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
@@ -56,7 +56,7 @@ const styles = {
     fontWeight: "600",
   },
 };
-const App = ({ isServerInfo }) => {
+const App = () => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
     useMoralis();
 
@@ -94,12 +94,10 @@ const App = ({ isServerInfo }) => {
 
         <div style={styles.content}>
           <Switch>
-            <Route exact path="/quickstart">
-              <QuickStart isServerInfo={isServerInfo} />
-            </Route>
-            <Route path="/wallet">
+            <Route exact path="/wallet">
               <Wallet />
             </Route>
+            
             <Route path="/1inch">
               <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
                 <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
@@ -113,6 +111,7 @@ const App = ({ isServerInfo }) => {
                 </Tabs.TabPane>
               </Tabs>
             </Route>
+          
             <Route path="/erc20balance">
               <ERC20Balance />
             </Route>
@@ -128,11 +127,14 @@ const App = ({ isServerInfo }) => {
             <Route path="/contract">
               <Contract />
             </Route>
+            {/* <Route path="/Wallet">
+              <Redirect Wallet />
+            </Route> */}
+            {/* <Route path="/wallet">
+              <Wallet  />
+            </Route> */}
             <Route path="/">
-              <Redirect to="/quickstart" />
-            </Route>
-            <Route path="/ethereum-boilerplate">
-              <Redirect to="/quickstart" />
+              <Redirect to="/wallet" />
             </Route>
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>

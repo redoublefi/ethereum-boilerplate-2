@@ -41,7 +41,7 @@ const styles = {
   },
 };
 
-function Transfer() {
+export default function Transfer() {
   const { Moralis } = useMoralis();
   const [receiver, setReceiver] = useState();
   const [asset, setAsset] = useState();
@@ -161,5 +161,3 @@ function Transfer() {
     </div>
   );
 }
-
-export default Transfer;
