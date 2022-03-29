@@ -25,7 +25,7 @@ const styles = {
   },
 };
 
-export default function  Wallet() {
+export default function Wallet() {
   return (
     <Card
       style={styles.card}
@@ -41,4 +41,3 @@ export default function  Wallet() {
     </Card>
   );
 }
-

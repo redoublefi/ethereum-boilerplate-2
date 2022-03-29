@@ -62,5 +62,3 @@ function Ramper() {
   // .on('*', console.log)
   // .show();
 }
-
-

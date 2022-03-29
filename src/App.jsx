@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
+  Redirect,
 } from "react-router-dom";
 import Account from "components/Account/Account";
 import Chains from "components/Chains";
@@ -97,7 +97,7 @@ const App = () => {
             <Route exact path="/wallet">
               <Wallet />
             </Route>
-            
+
             <Route path="/1inch">
               <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
                 <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
@@ -111,7 +111,7 @@ const App = () => {
                 </Tabs.TabPane>
               </Tabs>
             </Route>
-          
+
             <Route path="/erc20balance">
               <ERC20Balance />
             </Route>

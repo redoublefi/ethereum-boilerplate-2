@@ -22,7 +22,7 @@ const styles = {
   },
 };
 
-export default function QuickStart({isServerInfo}) {
+export default function QuickStart({ isServerInfo }) {
   const { Moralis } = useMoralis();
 
   const isInchDex = useMemo(
