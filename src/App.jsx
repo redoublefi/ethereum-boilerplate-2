@@ -24,6 +24,7 @@ import Contract from "components/Contract/Contract";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import image from "./logo.png";
+
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -69,6 +70,7 @@ const App = () => {
 
   return (
     <Layout style={{ height: "100vh", overflow: "auto" }}>
+      
       <Router>
         <Header style={styles.header}>
           <Logo />
