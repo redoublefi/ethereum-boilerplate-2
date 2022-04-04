@@ -24,6 +24,7 @@ import Contract from "components/Contract/Contract";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import image from "./logo.png";
+import Home from "components/Home";
 
 const { Header, Footer } = Layout;
 
@@ -57,7 +58,7 @@ const styles = {
     fontWeight: "600",
   },
 };
-const App = () => {
+const App = ({ isServerInfo }) => {
   const { isWeb3Enabled, enableWeb3, isAuthenticated, isWeb3EnableLoading } =
     useMoralis();
 
@@ -67,84 +68,94 @@ const App = () => {
       enableWeb3({ provider: connectorId });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, isWeb3Enabled]);
-
-  return (
-    <Layout style={{ height: "100vh", overflow: "auto" }}>
+  if (isServerInfo) {
+    return (
       <Router>
-        <Header style={styles.header}>
-          <Logo />
-          <MenuItems />
-          <div style={styles.headerRight}>
-            <Chains />
-            {/* <TokenPrice
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
+    );
+  } else {
+    return (
+      <Layout style={{ height: "100vh", overflow: "auto" }}>
+        <Router>
+          <Header style={styles.header}>
+            <Logo />
+            <MenuItems />
+            <div style={styles.headerRight}>
+              <Chains />
+              {/* <TokenPrice
               address="0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
               chain="eth"
               image="https://cloudflare-ipfs.com/ipfs/QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg/"
               size="40px"
             /> */}
-            <TokenPrice
-              address="0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
-              chain="MATIC"
-              image="https://i.ibb.co/HVNnh6S/polygon-matic-logo.png"
-              size="25px"
-            />
-            <NativeBalance />
-            <Account />
-          </div>
-        </Header>
+              <TokenPrice
+                address="0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+                chain="MATIC"
+                image="https://i.ibb.co/HVNnh6S/polygon-matic-logo.png"
+                size="25px"
+              />
+              <NativeBalance />
+              <Account />
+            </div>
+          </Header>
 
-        <div style={styles.content}>
-          <Switch>
-            <Route exact path="/wallet">
-              <Wallet />
-            </Route>
+          <div style={styles.content}>
+            <Switch>
+              <Route exact path="/wallet">
+                <Wallet />
+              </Route>
 
-            <Route path="/1inch">
-              <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
-                <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
-                  <DEX chain="eth" />
-                </Tabs.TabPane>
-                <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
-                  <DEX chain="bsc" />
-                </Tabs.TabPane>
-                <Tabs.TabPane tab={<span>Polygon</span>} key="3">
-                  <DEX chain="polygon" />
-                </Tabs.TabPane>
-              </Tabs>
-            </Route>
+              <Route path="/1inch">
+                <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
+                  <Tabs.TabPane tab={<span>Ethereum</span>} key="1">
+                    <DEX chain="eth" />
+                  </Tabs.TabPane>
+                  <Tabs.TabPane tab={<span>Binance Smart Chain</span>} key="2">
+                    <DEX chain="bsc" />
+                  </Tabs.TabPane>
+                  <Tabs.TabPane tab={<span>Polygon</span>} key="3">
+                    <DEX chain="polygon" />
+                  </Tabs.TabPane>
+                </Tabs>
+              </Route>
 
-            <Route path="/erc20balance">
-              <ERC20Balance />
-            </Route>
-            <Route path="/onramp">
-              <Ramper />
-            </Route>
-            <Route path="/erc20transfers">
-              <ERC20Transfers />
-            </Route>
-            <Route path="/nftBalance">
-              <NFTBalance />
-            </Route>
-            <Route path="/contract">
-              <Contract />
-            </Route>
-            {/* <Route path="/Wallet">
+              <Route path="/erc20balance">
+                <ERC20Balance />
+              </Route>
+              <Route path="/onramp">
+                <Ramper />
+              </Route>
+              <Route path="/erc20transfers">
+                <ERC20Transfers />
+              </Route>
+              <Route path="/nftBalance">
+                <NFTBalance />
+              </Route>
+              <Route path="/contract">
+                <Contract />
+              </Route>
+              {/* <Route path="/Wallet">
               <Redirect Wallet />
             </Route> */}
-            {/* <Route path="/wallet">
+              {/* <Route path="/wallet">
               <Wallet  />
             </Route> */}
-            <Route path="/">
-              <Redirect to="/wallet" />
-            </Route>
-            <Route path="/nonauthenticated">
-              <>Please login using the "Authenticate" button</>
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-      <Footer style={{ textAlign: "center" }}>
-        {/*<Text style={{ display: "block" }}>
+              <Route path="/">
+                <Redirect to="/wallet" />
+              </Route>
+              <Route path="/nonauthenticated">
+                <>Please login using the "Authenticate" button</>
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+        <Footer style={{ textAlign: "center" }}>
+          {/*<Text style={{ display: "block" }}>
           ⭐️ Please star this{" "}
           <a
             href="https://github.com/ethereum-boilerplate/ethereum-boilerplate/"
@@ -178,9 +189,10 @@ const App = () => {
           </a>
         </Text>
         */}
-      </Footer>
-    </Layout>
-  );
+        </Footer>
+      </Layout>
+    );
+  }
 };
 
 export const Logo = () => (
