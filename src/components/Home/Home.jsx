@@ -40,7 +40,7 @@ class Home extends Component {
             <header className="header_section">
               <div className="container">
                 <nav className="navbar navbar-expand-lg custom_nav-container">
-                  <a className="navbar-brand" href="index.html">
+                  <a className="navbar-brand" href="home.html">
                     <span> Re:Double </span>
                   </a>
 
@@ -62,7 +62,7 @@ class Home extends Component {
                   >
                     <ul className="navbar-nav">
                       <li className="nav-item active">
-                        <a className="nav-link" href="index.html">
+                        <a className="nav-link" href="home.html">
                           Home <span className="sr-only">(current)</span>
                         </a>
                       </li>
@@ -113,7 +113,7 @@ class Home extends Component {
                         <div className="col-md-8 col-lg-7">
                           <div className="detail-box">
                             <h1>
-                              We Grow Your Money <br />
+                              Liquid <br />
                             </h1>
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing
@@ -146,7 +146,7 @@ class Home extends Component {
                         <div className="col-md-8 col-lg-7">
                           <div className="detail-box">
                             <h1>
-                              We Protect Your Money <br />
+                              Secured <br />
                             </h1>
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing
@@ -178,7 +178,7 @@ class Home extends Component {
                         <div className="col-md-8 col-lg-7">
                           <div className="detail-box">
                             <h1>
-                              We do the hard work for you
+                              Rewarding
                               <br />
                             </h1>
                             <p>
@@ -380,7 +380,7 @@ class Home extends Component {
             </div>
           </section>
 
-          <section classNameName="client_section layout_padding">
+          {/*<section classNameName="client_section layout_padding">
             <div classNameName="container">
               <div classNameName="heading_container heading_center">
                 <h2>What Says Our Client</h2>
@@ -486,7 +486,7 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-                {/* <div className="carousel_btn-box">
+                 <div className="carousel_btn-box">
             <a
               className="carousel-control-prev"
               href="#carouselExample2Controls"
@@ -509,10 +509,10 @@ class Home extends Component {
               </span>
               <span className="sr-only">Next</span>
             </a>
-          </div> */}
+          </div> 
               </div>
             </div>
-          </section>
+                            </section>*/}
 
           <section className="info_section ">
             <div className="container">
