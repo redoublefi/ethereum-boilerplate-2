@@ -2,7 +2,7 @@
 import NativeBalance from "../NativeBalance";
 import Address from "../Address/Address";
 import Blockie from "../Blockie";
-import { Card, Statistic, Row, Col, Button } from "antd";
+import { Card } from "antd";
 
 const styles = {
   title: {
@@ -40,7 +40,7 @@ export default function Wallet() {
       >
         {/* <Transfer /> */}
       </Card>
-      <Card
+      {/* <Card
         style={styles.card}
         title={
           <div style={styles.header}>
@@ -63,7 +63,7 @@ export default function Wallet() {
         }
       >
         {/* <Transfer /> */}
-      </Card>
+      {/* </Card> */}
     </div>
   );
 }

@@ -25,7 +25,7 @@ import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 import image from "./logo.png";
 import Home from "components/Home";
-
+import SignIn from "components/Magiclink/Signin";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -83,7 +83,7 @@ const App = ({ isServerInfo }) => {
       <Layout style={{ height: "100vh", overflow: "auto" }}>
         <Router>
           <Header style={styles.header}>
-            <Logo />
+            <Logo type="https://him0lndjiyvs.usemoralis.com"></Logo>
             <MenuItems />
             <div style={styles.headerRight}>
               <Chains />
@@ -138,6 +138,9 @@ const App = ({ isServerInfo }) => {
               </Route>
               <Route path="/contract">
                 <Contract />
+              </Route>
+              <Route path="/magiclink">
+                <SignIn />
               </Route>
               {/* <Route path="/Wallet">
               <Redirect Wallet />

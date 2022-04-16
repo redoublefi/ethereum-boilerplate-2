@@ -45,6 +45,10 @@ function MenuItems() {
       <Menu.Item key="/contract">
         <NavLink to="/contract"> Contract</NavLink>
       </Menu.Item>
+
+      <Menu.Item key="/magiclink">
+        <NavLink to="/magiclink">Email Login</NavLink>
+      </Menu.Item>
     </Menu>
   );
 }

@@ -8,6 +8,13 @@ import { SelectOutlined } from "@ant-design/icons";
 import { getExplorer } from "helpers/networks";
 import Text from "antd/lib/typography/Text";
 import { connectors } from "./config";
+// import SignIn from "../Magiclink/Signin";
+
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from "react-router-dom";
 const styles = {
   account: {
     height: "42px",
@@ -85,9 +92,21 @@ function Account() {
                 key={key}
                 onClick={async () => {
                   try {
+                    // if (test)
+                    // {
+                    //     <Router>
+                    //       <Switch>
+                    //         <Route exact path="/">
+                    //           <SignIn />
+                    //         </Route>
+                    //       </Switch>
+                    //     </Router>
+                    // }
+                    // else {
                     await authenticate({ provider: connectorId });
                     window.localStorage.setItem("connectorId", connectorId);
                     setIsAuthModalVisible(false);
+                    // }
                   } catch (e) {
                     console.error(e);
                   }
