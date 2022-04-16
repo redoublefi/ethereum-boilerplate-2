@@ -40,7 +40,7 @@ class Home extends Component {
             <header className="header_section">
               <div className="container">
                 <nav className="navbar navbar-expand-lg custom_nav-container">
-                  <a className="navbar-brand" href="home.html">
+                  <a className="navbar-brand" href="/">
                     <span> Re:Double </span>
                   </a>
 
@@ -62,7 +62,7 @@ class Home extends Component {
                   >
                     <ul className="navbar-nav">
                       <li className="nav-item active">
-                        <a className="nav-link" href="home.html">
+                        <a className="nav-link" href="/">
                           Home <span className="sr-only">(current)</span>
                         </a>
                       </li>
@@ -100,7 +100,7 @@ class Home extends Component {
                 </nav>
               </div>
             </header>
-            <section className="slider_section">
+            {/*<section className="slider_section">
               <div
                 id="customCarousel1"
                 className="carousel slide"
@@ -108,7 +108,7 @@ class Home extends Component {
               >
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <div className="container">
+                    */}<div className="container">
                       <div className="row">
                         <div className="col-md-8 col-lg-7">
                           <div className="detail-box">
@@ -138,7 +138,7 @@ class Home extends Component {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div>{/*
                   </div>
                   <div className="carousel-item">
                     <div className="container">
@@ -159,7 +159,7 @@ class Home extends Component {
                                 {" "}
                                 Launch App{" "}
                               </a> */}
-                              <button
+                              {/*<button
                                 type="button"
                                 className="btn btn-primary"
                                 onClick={this.showAppMain}
@@ -193,7 +193,7 @@ class Home extends Component {
                                 {" "}
                                 Launch App{" "}
                               </a> */}
-                              <button
+                              {/*<button
                                 type="button"
                                 className="btn btn-primary"
                                 onClick={this.showAppMain}
@@ -230,7 +230,7 @@ class Home extends Component {
                   </div>
                 </div>
               </div>
-            </section>
+                            </section>*/}
           </div>
 
           <section className="service_section layout_padding">
