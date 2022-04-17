@@ -100,8 +100,8 @@ class Home extends Component {
                 </nav>
               </div>
             </header>
-            {/*<section className="slider_section">
-              <div
+            <section className="slider_section">
+              {/*<div
                 id="customCarousel1"
                 className="carousel slide"
                 data-ride="carousel"
@@ -109,36 +109,36 @@ class Home extends Component {
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     */}<div className="container">
-                      <div className="row">
-                        <div className="col-md-8 col-lg-7">
-                          <div className="detail-box">
-                            <h1>
-                              Liquid <br />
-                            </h1>
-                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Odio omnis fugit, sed tempora praesentium
-                              commodi error, hic recusandae repudiandae neque ad
-                              molestias, atque veritatis labore quae eveniet
-                              autem in
-                            </p>
-                            <div className="btn-box">
-                              {/* <a href="" className="btn1">
+                <div className="row">
+                  <div className="col-md-8 col-lg-7">
+                    <div className="detail-box">
+                      <h1>
+                        Liquid · Secured · Rewarding <br />
+                      </h1>
+                      <br />
+                      <h2 className="text-white">
+                        Earn Smart <br />
+                        Not Hard
+                      </h2>
+                      <br />
+                      <br/>
+                      <div className="btn-box">
+                        {/* <a href="" className="btn1">
                                 {" "}
                                 Launch App{" "}
                               </a> */}
-                              <button
-                                type="button"
-                                className="btn btn-primary"
-                                onClick={this.showAppMain}
-                              >
-                                Launch App
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                        <button
+                          type="button"
+                          className="btn btn-primary"
+                          onClick={this.showAppMain}
+                        >
+                          Launch App
+                        </button>
                       </div>
-                    </div>{/*
+                    </div>
+                  </div>
+                </div>
+              </div>{/*
                   </div>
                   <div className="carousel-item">
                     <div className="container">
@@ -159,7 +159,7 @@ class Home extends Component {
                                 {" "}
                                 Launch App{" "}
                               </a> */}
-                              {/*<button
+              {/*<button
                                 type="button"
                                 className="btn btn-primary"
                                 onClick={this.showAppMain}
@@ -193,7 +193,7 @@ class Home extends Component {
                                 {" "}
                                 Launch App{" "}
                               </a> */}
-                              {/*<button
+              {/*<button
                                 type="button"
                                 className="btn btn-primary"
                                 onClick={this.showAppMain}
@@ -229,8 +229,8 @@ class Home extends Component {
                     </a>
                   </div>
                 </div>
-              </div>
-                            </section>*/}
+                            </div>*/}
+            </section>
           </div>
 
           <section className="service_section layout_padding">
