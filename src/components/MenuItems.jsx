@@ -21,15 +21,15 @@ function MenuItems() {
       {/*<Menu.Item key="/quickstart">
         <NavLink to="/quickstart">🚀 Quick Start</NavLink>
       </Menu.Item> */}
-      <Menu.Item key="/Home">
+      {/* <Menu.Item key="/Home">
         <NavLink to="/Home"> Home</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
       <Menu.Item key="/wallet">
         <NavLink to="/wallet"> Wallet</NavLink>
       </Menu.Item>
-      <Menu.Item key="/1inch">
+      {/* <Menu.Item key="/1inch">
         <NavLink to="/1inch"> Swap</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
       <Menu.Item key="onramp">
         <NavLink to="/onramp"> Fiat</NavLink>
       </Menu.Item>
@@ -42,9 +42,9 @@ function MenuItems() {
       {/*<Menu.Item key="/nftBalance">
         <NavLink to="/nftBalance">🖼 NFTs</NavLink>
       </Menu.Item> */}
-      <Menu.Item key="/contract">
+      {/* <Menu.Item key="/contract">
         <NavLink to="/contract"> Contract</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
 
       <Menu.Item key="/magiclink">
         <NavLink to="/magiclink">Email Login</NavLink>
