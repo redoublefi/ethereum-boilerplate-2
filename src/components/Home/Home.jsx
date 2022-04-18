@@ -76,7 +76,7 @@ class Home extends Component {
                       <li className="nav-item">
                         <a
                           className="nav-link"
-                          href="https://medium.com/@redouble.finance"
+                          href="https://redouble-finance.medium.com/"
                         >
                           {" "}
                           Blog{" "}
@@ -311,7 +311,7 @@ class Home extends Component {
                           which utilise stable coins which are pegged against a
                           real asset, the US Dollar. <br />
                           <br />
-                          <br />
+                          
                         </p>
                         <a href=""> Read More </a>
                       </div>
@@ -322,7 +322,7 @@ class Home extends Component {
             </div>
           </section>
 
-          <section classNameName="about_section about_section1 layout_padding-bottom">
+          {/*<section classNameName="about_section about_section1 layout_padding-bottom">
             <div classNameName="container">
               <div classNameName="row">
                 <div classNameName="col-lg-6">
@@ -526,9 +526,8 @@ class Home extends Component {
                         <h4>Re:Double</h4>
                       </a>
                       <p>
-                        Soluta odit exercitationem rerum aperiam eos consectetur
-                        impedit delectus qui reiciendis, distinctio, asperiores
-                        fuga labore Magni natus.
+                      A liquid insured investment platform offering better than bank returns, 
+                      built on and invested in blockchain technology to serve the masses.
                       </p>
                       <div className="social_box">
                         <a href="">
@@ -552,7 +551,7 @@ class Home extends Component {
                   <div className="col-md-5 col-lg-4 col-xl-3 mx-auto">
                     <h4>Contact us</h4>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    88 Kent Ridge Road Singapore 119088
                     </p>
                     <div className="contact_nav">
                       <a href="">
@@ -561,11 +560,11 @@ class Home extends Component {
                       </a>
                       <a href="">
                         <i className="fa fa-phone" aria-hidden="true"></i>
-                        <span>Call : +01 123455678990</span>
+                        <span>Call : +65 12345678</span>
                       </a>
                       <a href="">
                         <i className="fa fa-envelope" aria-hidden="true"></i>
-                        <span>Email : demo@gmail.com</span>
+                        <span>Email : redouble.finance@gmail.com</span>
                       </a>
                     </div>
                   </div>
