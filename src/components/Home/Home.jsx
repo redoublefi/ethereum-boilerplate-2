@@ -108,7 +108,8 @@ class Home extends Component {
               >
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    */}<div className="container">
+                    */}
+              <div className="container">
                 <div className="row">
                   <div className="col-md-8 col-lg-7">
                     <div className="detail-box">
@@ -121,7 +122,7 @@ class Home extends Component {
                         Not Hard
                       </h2>
                       <br />
-                      <br/>
+                      <br />
                       <div className="btn-box">
                         {/* <a href="" className="btn1">
                                 {" "}
@@ -138,7 +139,8 @@ class Home extends Component {
                     </div>
                   </div>
                 </div>
-              </div>{/*
+              </div>
+              {/*
                   </div>
                   <div className="carousel-item">
                     <div className="container">

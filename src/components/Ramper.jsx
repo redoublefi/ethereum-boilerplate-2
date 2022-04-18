@@ -33,13 +33,10 @@
 //   );
 // }
 
-
 // import { RampInstantSDK } from "@ramp-network/ramp-instant-sdk";
 
-
-
 // function Ramper() {
-  
+
 // new RampInstantSDK({
 //      hostAppName: "Ramp Demo",
 //      hostLogoUrl:
@@ -48,28 +45,22 @@
 //       containerNode: document.getElementById('root')
 // }).show()
 
-  
 // }
-
 
 function Ramper() {
   return (
     <div className="Ramp">
-
-      <iframe src="https://buy.ramp.network/?hostAppName=Ramp_Demo&hostLogoUrl=https://i.ibb.co/fFd9p97/redouble-logo-dotted-png-1000x1000.png&variant=auto"
-        target='blank'
+      <iframe
+        src="https://buy.ramp.network/?hostAppName=Ramp_Demo&hostLogoUrl=https://i.ibb.co/fFd9p97/redouble-logo-dotted-png-1000x1000.png&variant=auto"
+        target="blank"
         width={400}
         height={650}
-         frameBorder="0"></iframe>
-      
-       {/* <a href="https://buy.ramp.network/?hostAppName=Ramp_Demo&hostLogoUrl=https://i.ibb.co/fFd9p97/redouble-logo-dotted-png-1000x1000.png&variant=auto
+        frameBorder="0"
+      ></iframe>
+
+      {/* <a href="https://buy.ramp.network/?hostAppName=Ramp_Demo&hostLogoUrl=https://i.ibb.co/fFd9p97/redouble-logo-dotted-png-1000x1000.png&variant=auto
 " target='blank'>Go to Ramp</a> */}
-      
     </div>
-    
-
-
-    
   );
 }
 export default Ramper;
