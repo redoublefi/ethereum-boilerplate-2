@@ -87,14 +87,14 @@ class Home extends Component {
                           Contact Us
                         </a>
                       </li>
-                      <form className="form-inline justify-content-center">
+                      {/* <form className="form-inline justify-content-center">
                         <button
                           className="btn my-2 my-sm-0 nav_search-btn"
                           type="submit"
                         >
                           <i className="fa fa-search" aria-hidden="true"></i>
                         </button>
-                      </form>
+                      </form> */}
                     </ul>
                   </div>
                 </nav>
@@ -535,15 +535,15 @@ class Home extends Component {
                         <a href="https://twitter.com/RedoubleFi">
                           <i className="fa fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="">
-                          <i className="fa fa-linkedin" aria-hidden="true"></i>
+                        <a href="https://redouble-finance.medium.com/">
+                          <i className="fa fa-medium" aria-hidden="true"></i>
                         </a>
-                        <a href="">
+                        {/* <a href="">
                           <i
                             className="fa fa-youtube-play"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>

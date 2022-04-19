@@ -27,10 +27,11 @@ const styles = {
 
 export default function Wallet() {
   return (
+   
     <div style={{ display: "flex", gap: "10px" }}>
       <Card
         style={styles.card}
-        title={
+        title= {
           <div style={styles.header}>
             <Blockie scale={5} avatar currentWallet style />
             <Address size="6" copyable />

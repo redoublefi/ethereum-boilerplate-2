@@ -200,7 +200,9 @@ const App = ({ isServerInfo }) => {
 
 export const Logo = () => (
   <div style={{ display: "flex" }}>
-    <img src={image} size="40px" />
+    <a href='/'>
+      <img src={image} size="40px" />
+    </a>
   </div>
 );
 /*<svg
