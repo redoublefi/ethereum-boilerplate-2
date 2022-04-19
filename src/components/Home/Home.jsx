@@ -250,13 +250,13 @@ class Home extends Component {
                       <div className="detail-box">
                         <h5>BETTER THAN YOUR BANK'S RETURNS</h5>
                         <p>
-                          Earn up to XXXX% APY which is 20x more than keeping
-                          your money idle in your savings account or locking it
-                          up in a fixed deposit account. Maximise the growth of
-                          your capital with zero deposit fees, no minimum
-                          deposit and no lock in period.
+                          Earn up to 9% APY which is 10x more than keeping your
+                          money idle in your savings account or locking it up in
+                          a fixed deposit account. Maximise the growth of your
+                          capital with zero deposit fees, no minimum deposit and
+                          no lock in period.
                         </p>
-                        <a href=""> Read More </a>
+                        <a href=""></a>
                       </div>
                     </div>
                   </div>
@@ -269,13 +269,12 @@ class Home extends Component {
                         <h5>Seamless exchange & Deposit</h5>
                         <p>
                           Enjoy seamless fiat to crypto exchange via the Ramp
-                          integration below. Buy supported coins directly with
-                          any major credit or debit card and even create a
-                          wallet seamlessly if you need to while you're at it.{" "}
-                          <br />
+                          integration. Buy supported coins directly with any
+                          major credit or debit card and even create a wallet
+                          seamlessly if you need to while you're at it. <br />
                           <br />
                         </p>
-                        <a href=""> Read More </a>
+                        <a href=""> </a>
                       </div>
                     </div>
                   </div>
@@ -294,7 +293,7 @@ class Home extends Component {
                           <br />
                           <br />
                         </p>
-                        <a href=""> Read More </a>
+                        <a href=""></a>
                       </div>
                     </div>
                   </div>
@@ -311,9 +310,8 @@ class Home extends Component {
                           which utilise stable coins which are pegged against a
                           real asset, the US Dollar. <br />
                           <br />
-                          
                         </p>
-                        <a href=""> Read More </a>
+                        <a href=""></a>
                       </div>
                     </div>
                   </div>
@@ -526,14 +524,15 @@ class Home extends Component {
                         <h4>Re:Double</h4>
                       </a>
                       <p>
-                      A liquid insured investment platform offering better than bank returns, 
-                      built on and invested in blockchain technology to serve the masses.
+                        A liquid insured investment platform offering better
+                        than bank returns, built on and invested in blockchain
+                        technology to serve the masses.
                       </p>
                       <div className="social_box">
                         <a href="">
                           <i className="fa fa-facebook" aria-hidden="true"></i>
                         </a>
-                        <a href="">
+                        <a href="https://twitter.com/RedoubleFi">
                           <i className="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                         <a href="">
@@ -550,9 +549,7 @@ class Home extends Component {
                   </div>
                   <div className="col-md-5 col-lg-4 col-xl-3 mx-auto">
                     <h4>Contact us</h4>
-                    <p>
-                    88 Kent Ridge Road Singapore 119088
-                    </p>
+                    <p>88 Kent Ridge Road Singapore 119088</p>
                     <div className="contact_nav">
                       <a href="">
                         <i className="fa fa-map-marker" aria-hidden="true"></i>
