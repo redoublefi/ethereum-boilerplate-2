@@ -586,7 +586,7 @@ class Home extends Component {
             <div className="container">
               <p>
                 &copy; <span id="displayYear"></span> All Rights Reserved By
-                <a href="https://html.design/">Redouble</a>
+                <a href="https://html.design/"> Redouble</a>
               </p>
             </div>
           </footer>
