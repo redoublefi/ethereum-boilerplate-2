@@ -41,11 +41,11 @@ export default function Wallet() {
         {/* <Transfer /> */}
       </Card>
       <Card
-        title="Quick Start Instructions" extra={<a href="#">More</a>} style={{ width: 300 }}
+        title="Quick Start Instructions" style={{ width: 300 }}
       >
         <p>Click <strong>Authenticate</strong> to connect your Metamask to see wallet balance </p>
         <p><strong>OR</strong></p>
-        <p><strong>IF you don't have a wallet</strong>, you can get one by signing in with your email which automatically creates a wallet for you. Simply, click Email Login on the Main Menu every time you want to sign-in to access your wallet.</p>
+        <p><strong>IF you don't have a wallet</strong>, you can get one by signing in with your email via Click Email Login on the Main Menu to create and access your wallet.</p>
         {/* <Transfer /> */}
       </Card>
     </div>
