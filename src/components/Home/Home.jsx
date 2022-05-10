@@ -72,6 +72,13 @@ class Home extends Component {
                           About
                         </a>
                       </li>
+                      
+                      <li className="nav-item">
+                        <a className="nav-link" href="learncrypto.html">
+                          {" "}
+                          Learn Defi
+                        </a>
+                      </li>
 
                       <li className="nav-item">
                         <a
