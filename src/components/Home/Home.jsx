@@ -86,7 +86,7 @@ class Home extends Component {
                           href="https://redouble-finance.medium.com/"
                         >
                           {" "}
-                          Blog{" "}
+                          Blog
                         </a>
                       </li>
                       <li className="nav-item">
@@ -255,6 +255,7 @@ class Home extends Component {
                         <img src="images/s12.png" alt="" />
                       </div>
                       <div className="detail-box">
+                        
                         <h5>BETTER THAN YOUR BANK'S RETURNS</h5>
                         <p>
                           Earn up to 9% APY which is 10x more than keeping your
