@@ -86,7 +86,7 @@ class Home extends Component {
                           href="https://redouble-finance.medium.com/"
                         >
                           {" "}
-                          Blog{" "}
+                          Blog
                         </a>
                       </li>
                       <li className="nav-item">
